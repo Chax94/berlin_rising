@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Six Caps' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+   
+    
+
+    <!-- Bootstrap Modal -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reboot.css">
+    <link rel="stylesheet" href="styles.css"></link>
+
+
+    <!-- Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    
+    
+    <title>Rising Berlin</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li class="intro"><a href="#intro">Intro</a></li>
+          <li class="logline"><a href="#logline">Logline</a></li>
+          <li class="trailer"><a href="#trailer">Trailer</a></li>
+          <li class="team"><a href="#team">Team</a></li>
+          <li class="cast"><a href="#cast">Cast</a></li>
+          <li class="crew"><a href="#crew">Crew</a></li>
+        </ul>
+    </header>
+      
+    <!-- <section id="intro" class="home">
+        <div class="flexbox-container">         
+            <div class="text-right">
+                <div class="title-block">
+                    <h1 class="title">Berlin Rising</h1>
+                </div>
+                <div class="subtitle-block">
+                    <h2 class="subtitle">A Film Directed by Vincent Janssen & Written by Srdan Jankovic</h2>
+                </div>
+                <div class="text-block">
+                    <p class="text">As an extremely infamous topic for students and adults, we bring you a social
+                        drama addressing the imperative matter of rent in the city of Berlin. Not only is
+                        this issue essential in Germany, but it covers all of Europe. From our base here in
+                        Berlin, we have gathered personal and public knowledge on this problem and used
+                        our artistic expression in the form of film to give a voice to the subject.
+                        Berlin, we have heard your cries!</p>
+                </div>
+            </div>
+            <div class="border-out">
+                <div class="box-left">
+                    <div class="intro-number-wrap">
+                        <h1 class="intro-number">3</h1>
+                    </div>
+                    <div class="box-inside">
+                        <div class="intro-title-wrap">
+                            <h1 class="intro-title">festival nominaties</h1>
+                        </div>
+                        <div class="intro-text-wrap">
+                            <h2 class="intro-text">best movie of the year</h2>
+                            <h2 class="intro-text">best director</h2>
+                            <h2 class="intro-text">best soundtrack</h2>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section> -->
+
+    <section id="intro" class="home">
+        <div class="flexbox-container">
+            <div class="flex-top">
+                <h1 class="title">Berlin Rising</h1>
+                <h1 class="subtitle">A Film Directed by Vincent Janssen & Written by Srdan Jankovic</h1>
+            </div>
+            <div class="flex-bottom">
+                <h2 class="text">As an extremely infamous topic for students and adults, we bring you a social
+                    drama addressing the imperative matter of rent in the city of Berlin. Not only is
+                    this issue essential in Germany, but it covers all of Europe. From our base here in
+                    Berlin, we have gathered personal and public knowledge on this problem and used
+                    our artistic expression in the form of film to give a voice to the subject.
+                    Berlin, we have heard your cries!</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="logline" class="synopsis">
+        <div class="flexbox-container">
+            <div class="flex-top">
+                <h1 class="title">Logline</h1>
+            </div>
+            <div class="flex-bottom">
+                <h2 class="synopsis-text">As Berlin’s rent crisis continues to increase, so does the number of fleeing tenants.
+                    When this problem reaches Zayn’s own doorstep, the young artist decides to fight.</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="trailer" class="trailer">
+        <div>
+            <div class="trailer-container">
+                <div class="trailer-heading">
+                    <h1 class="title">The trailer</h1>
+                </div>
+    
+                <div class="trailer-thumbnail">
+                    <img id="image" src="images/trailer-thumbnail.jpg" alt="trailer" class="trailer-img">
+                    <a href="" class="video-button">
+                        <span id="play-button-container">
+                            <span class="play-button play-button-before"></span>
+                            <span class="play-button play-button-after"></span>
+                        </span>
+                    </a>                  
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section id="team" class="prod">
+        <div class="flexbox-container">
+            <div class="flex-top">
+                <h1 class="title">The team</h1>
+            </div>
+            <div class="prod-carousel">
+                <button type="button" class="slider-nav"></button>
+                <button type="button" class="slider-nav slider-nav-next"></button>
+                <div class="flex-bottom prod-slides">
+                    <div class="pics-wrap">
+                        <div class="gray-bg cast-big">
+                            <a data-bs-toggle="modal" data-bs-target="#vincent-modal" class="cast-pics">
+                                <img class="pics clickable" src="images/prod.png">
+                            </a>
+                            <p class="pics-names">Vincent Janssen</p>
+                            <p class="pics-title">Director</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg cast-big">
+                            <a data-bs-toggle="modal" data-bs-target="#srdan-modal" class="cast-pics">
+                                <img class="pics clickable" src="images/writer.png">
+                            </a>
+                            <p class="pics-names">Srdan Jankovic</p>
+                            <p class="pics-title">Writer</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg cast-big">
+                            <a data-bs-toggle="modal" data-bs-target="#mario-modal" class="cast-pics">
+                                <img class="pics clickable" src="images/cast1.png">
+                            </a>
+                            <p class="pics-names">Mario R. Leon</p>
+                            <p class="pics-title">Producer / Actor</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg cast-big">
+                            <a data-bs-toggle="modal" data-bs-target="#miriam-modal" class="cast-pics">
+                                <img class="pics clickable" src="images/crew1.png">
+                            </a>
+                            <p class="pics-names">Miriam Gurgutä</p>
+                            <p class="pics-title">Producer / Casting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <section id="cast" class="cast">
+        <div class="flexbox-container">
+            <div class="flex-top">
+                <h1 class="title">The cast</h1>
+            </div>
+            <div class="cast-carousel">
+                <button type="button" class="slider-nav"></button>
+                <button type="button" class="slider-nav slider-nav-next"></button>
+                <div class="flex-bottom cast-slides">
+                    <div class="pics-wrap">
+                        <div class="gray-bg cast-big">
+                            <a data-bs-toggle="modal" data-bs-target="#mario-modal" class="cast-pics">
+                                <img class="pics clickable" src="images/cast1.png">
+                            </a>
+                            <p class="pics-names">Mario R. Leon</p>
+                            <p class="pics-title">Zayn</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg cast-big">
+                            <a class="cast-pics">
+                                <img class="pics clickable" src="images/cast2.png">
+                            </a>
+                            <p class="pics-names">Denise Wolff</p>
+                            <p class="pics-title">Linda</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg cast-big">
+                            <a class="cast-pics">
+                                <img class="pics clickable" src="images/cast3.png">
+                            </a>
+                            <p class="pics-names">Fabian Raack</p>
+                            <p class="pics-title">Stan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+
+        <div id="trailer-modal" class="modal fade" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <span class="modal-close" aria-hidden="true" data-bs-dismiss="modal">&times;</span>
+                        <iframe id="trailer" class="embed-responsive-item" src="https://www.youtube.com/embed/t7HT83wkVss" allowfullscreen></iframe>                     
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div id="vincent-modal" class="modal fade" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <span class="modal-close" aria-hidden="true" data-bs-dismiss="modal">&times;</span>
+                    <div class="flexbox-container">
+                        <div class="person">
+                            <div class="image-left">
+                                <img src="images/prod.png">
+                            </div>
+                            <div class="modal-name">
+                                <h1 class="title">Vincent Janssen</h1>
+                                <div class="contact">
+                                    <a href="https://www.instagram.com/vinjan98/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.imdb.com/name/nm9907957/?ref_=nmbio_bio_nm" target="_blank"><i class="fab fa-imdb"></i></a>
+                                    <a href="mailto:vincentjanssenproductions@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="description-right">
+                            <div class="description-right-content">
+                                <p class="text">Vincent Janssen is a director, writer, producer and creative artist
+                                    born on March 12, 1998 in a town in the south of the Netherlands, Maastricht.
+                                    After getting his first camera at the age of 13 he started making short movies.
+                                    Later on Vincent started college where he studied Communication, International
+                                    Event, Music & Entertainment Studies. While studying this bachelor's degree his
+                                    attention went to the world of cinema. During his minors in Contemporary
+                                    Scandinavian Fiction and Film Production in Lillehammer (Norway) his love for
+                                    film expanded enormously. After the introduction to the art of filmmaking he
+                                    continued his studies at the MET Film School in Berlin where he is now.</p>
+                            </div>   
+                        </div>   
+                    </div>                     
+                </div> 
+            </div>
+        </div>
+        <div id="srdan-modal" class="modal fade" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <span class="modal-close" aria-hidden="true" data-bs-dismiss="modal">&times;</span>
+                    <div class="flexbox-container">
+                        <div class="person">
+                            <div class="image-left">
+                                <img src="images/writer.png">
+                            </div>
+                            <div class="modal-name">
+                                <h1 class="title">Srdan Jankovic</h1>
+                                <div class="contact">
+                                    <a href="https://www.imdb.com/name/nm12596871/?ref_=tt_ov_wr" target="_blank"><i class="fab fa-imdb"></i></a>
+                                    <a href="mailto:Jankovicbog@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="description-right">
+                            <div class="description-right-content">
+                                <p class="text">My name is Srđan Janković, I started making movies since I
+                                    was a kid, and now finally I am a student at MET Film School Berlin. I took a
+                                    long path to filmmaking. I was born and raised in Serbia where I graduated from
+                                    Elementary and High School. After that I graduated from Mount Mercy University
+                                    in the United States with a Business Marketing degree. However, the love for the
+                                    film was still there. I quit my marketing job in the USA and came back to Serbia
+                                    to work on a TV Series as a co-writer and 1st assistant director. Working there my
+                                    love for the movies got even bigger, so I decided to study film here in Berlin. I
+                                    believe that one day I will become a successful screenwriter and director.</p>
+                            </div>   
+                        </div>   
+                    </div>                     
+                </div> 
+            </div>
+        </div>
+        <div id="miriam-modal" class="modal fade" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <span class="modal-close" aria-hidden="true" data-bs-dismiss="modal">&times;</span>
+                    <div class="flexbox-container">
+                        <div class="person">
+                            <div class="image-left">
+                                <img src="images/crew1.png">
+                            </div>
+                            <div class="modal-name">
+                                <h1 class="title">Miriam Gurgutä</h1>
+                                <div class="contact">
+                                    <a href="https://www.instagram.com/miriam_gurguta/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.imdb.com/name/nm14286551/?ref_=nv_sr_srsg_0" target="_blank"><i class="fab fa-imdb"></i></a>
+                                    <a href="mailto:miriam@miriam.ro" target="_blank"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="description-right">
+                            <div class="description-right-content">
+                                <p class="text">Miriam is a Romanian film student with a passion for
+                                    documentaries and art house cinema. Developing a love for film from a young age,
+                                    she has come to Berlin to study and pursue her career. Her first love in film was
+                                    Pulp Fiction but over time she grew to love social dramas and independent films.
+                                    After finishing her bachelors she hopes to become a producer and director in both
+                                    fiction and documentary.</p>
+                            </div>   
+                        </div>   
+                    </div>                     
+                </div> 
+            </div>
+        </div>
+        <div id="mario-modal" class="modal fade" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <span class="modal-close" aria-hidden="true" data-bs-dismiss="modal">&times;</span>
+                    <div class="flexbox-container">
+                        <div class="person">
+                            <div class="image-left">
+                                <img src="images/cast1.png">
+                            </div>
+                            <div class="modal-name">
+                                <h1 class="title">Mario R. Leon</h1>
+                                <div class="contact">
+                                    <a href="https://www.instagram.com/marioroiig/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.imdb.com/name/nm7066621/" target="_blank"><i class="fab fa-imdb"></i></a>
+                                    <a href="mailto:mroigleon@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="description-right">
+                            <div class="description-right-content">
+                                <p class="text">Mario R. Leon is a Spanish upcoming talent based in Berlin. He was introduced to the world of art house cinema at a young age, jumpstarting his love for film. This led him to pursue the craft of acting. After film camps and classes he landed a secondary role on a Spanish TVE series at the age of 12. On completing his IGCSE’s in Mallorca, he moved to Vancouver to major in Drama studies for his last years of high school. Now living in Berlin, he is finishing his degree in the performing arts. Excited for the future, he is ready to take risks and determined to master his skills. Once he finalized his studies, Mario wishes to move to Australia or the USA to continue his acting career.</p>
+                            </div>   
+                        </div>   
+                    </div>                     
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section id="crew" class="crew">
+        <div class="flexbox-container">
+            <div class="flex-top">
+                <h1 class="title">The crew</h1>
+            </div>
+            <div class="crew-carousel">
+                <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+                <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+                <div class="crew-slides flex-bottom">
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew1.png">
+                            <p class="pics-names">Miriam Gurgutä</p>
+                            <p class="pics-title">Producer / Casting</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew2.png">
+                            <p class="pics-names">Pietro Andreini</p>
+                            <p class="pics-title">DOP</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew3.png">
+                            <p class="pics-names">Tanyel Kröll</p>
+                            <p class="pics-title">Sound</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew4.png">
+                            <p class="pics-names">Mina Janssens</p>
+                            <p class="pics-title">Set Design & Make Up</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew5.png">
+                            <p class="pics-names">Saskia Mae</p>
+                            <p class="pics-title">Location Scout & Costume</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew6.png">
+                            <p class="pics-names">Niels Dalgaard</p>
+                            <p class="pics-title">Edit</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew7.png">
+                            <p class="pics-names">Matvey</p>
+                            <p class="pics-title">Camera</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew11.png">
+                            <p class="pics-names">Stefan Lindner</p>
+                            <p class="pics-title">Sound Assistant</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew9.png">
+                            <p class="pics-names">Raya Van der Laan</p>
+                            <p class="pics-title">Craft</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew10.png">
+                            <p class="pics-names">Miriam Haldt</p>
+                            <p class="pics-title">BTS</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew12.png">
+                            <p class="pics-names">Beatriz Coimbra</p>
+                            <p class="pics-title">Assistant producer / Skater 2</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew13.png">
+                            <p class="pics-names">Miriam Haldt</p>
+                            <p class="pics-title">BTS</p>
+                        </div>
+                    </div>
+                    <div class="pics-wrap">
+                        <div class="gray-bg">
+                            <img class="pics" src="images/crew14.png">
+                            <p class="pics-names">Arrat de Palma</p>
+                            <p class="pics-title">Camera Assistant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-copyrights">
+                    <p>© 2023 Berlin Rising. All rights reserved.</p>
+                </div>
+                <div class="footer-button">
+                    <p>Support the project</p>
+                    <button type="button" class="btn btn-lg btn-outline-warning"><a href="https://www.gofundme.com/f/Berlin-Rising" target="_blank" >Donate</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <div class="contact-link">
+            <a href="#">Contact <br> Us</a>
+        </div>
+        <div class="contact-section">
+            <h2>Contact Information</h2>
+            <p>Email: info@example.com</p>
+            <p>Phone: 555-555-5555</p>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
+    <script>
+
+        // Slider Carousel
+
+        const div1 = document.querySelector('.crew-carousel');
+        const div2 = document.querySelector('.crew-slides');
+        const div3 = document.querySelector('.cast-carousel');
+        const div4 = document.querySelector('.cast-slides');
+        const div5 = document.querySelector('.prod-carousel');
+        const div6 = document.querySelector('.prod-slides');
+
+        function handleMediaQuery1(mq) {
+            if (mq.matches) {
+                div2.classList.add('slider-container');
+                div2.classList.remove('flex-bottom');
+                div1.classList.add('swiffy-slider', 'slider-item-reveal', 'slider-nav-caret', 'slider-nav-visible', 'slider-indicators-outside', 'slider-indicators-round', 'slider-indicators-dark', 'slider-nav-animation', 'slider-nav-animation-scale', 'slider-item-first-visible');
+            } else {
+                div2.classList.add('flex-bottom');
+                div2.classList.remove('slider-container');
+                div1.classList.remove('swiffy-slider', 'slider-item-reveal', 'slider-nav-caret', 'slider-nav-visible', 'slider-indicators-outside', 'slider-indicators-round', 'slider-indicators-dark', 'slider-nav-animation', 'slider-nav-animation-scale', 'slider-item-first-visible');
+            }
+        }
+
+        function handleMediaQuery2(mq) {
+            if (mq.matches) {
+                div4.classList.add('slider-container');
+                div4.classList.remove('flex-bottom');
+                div3.classList.add('swiffy-slider', 'slider-item-reveal', 'slider-nav-caret', 'slider-nav-visible', 'slider-indicators-outside', 'slider-indicators-round', 'slider-indicators-dark', 'slider-nav-animation', 'slider-nav-animation-scale', 'slider-item-first-visible');
+            } else {
+                div4.classList.add('flex-bottom');
+                div4.classList.remove('slider-container');
+                div3.classList.remove('swiffy-slider', 'slider-item-reveal', 'slider-nav-caret', 'slider-nav-visible', 'slider-indicators-outside', 'slider-indicators-round', 'slider-indicators-dark', 'slider-nav-animation', 'slider-nav-animation-scale', 'slider-item-first-visible');
+            }
+        }
+
+        function handleMediaQuery3(mq) {
+            if (mq.matches) {
+                div6.classList.add('slider-container');
+                div6.classList.remove('flex-bottom');
+                div5.classList.add('swiffy-slider', 'slider-item-reveal', 'slider-nav-caret', 'slider-nav-visible', 'slider-indicators-outside', 'slider-indicators-round', 'slider-indicators-dark', 'slider-nav-animation', 'slider-nav-animation-scale', 'slider-item-first-visible');
+            } else {
+                div6.classList.add('flex-bottom');
+                div6.classList.remove('slider-container');
+                div5.classList.remove('swiffy-slider', 'slider-item-reveal', 'slider-nav-caret', 'slider-nav-visible', 'slider-indicators-outside', 'slider-indicators-round', 'slider-indicators-dark', 'slider-nav-animation', 'slider-nav-animation-scale', 'slider-item-first-visible');
+            }
+        }
+
+        const mq1 = window.matchMedia('(max-width: 1040px)');
+        handleMediaQuery1(mq1); // call the function initially to update the div class
+        mq1.addListener(handleMediaQuery1); // attach a listener to update the div class when the screen size changes
+    
+        const mq2 = window.matchMedia('(max-width: 540px)');
+        handleMediaQuery2(mq2); // call the function initially to update the div class
+        mq2.addListener(handleMediaQuery2); // attach a listener to update the div class when the screen size changes
+    
+        const mq3 = window.matchMedia('(max-width: 730px)');
+        handleMediaQuery3(mq3); // call the function initially to update the div class
+        mq3.addListener(handleMediaQuery3); // attach a listener to update the div class when the screen size changes
+    
+
+        // Play button style
+
+        // Get a reference to the button and image elements
+        const button = document.getElementById("play-button-container");
+        const image = document.getElementById("image");
+
+        // Set the initial value for the filter property
+        image.style.filter = "brightness(100%) blur(0)";
+
+        // Attach a mouseover event listener to the button
+        button.addEventListener("mouseover", () => {
+            // Make the image darker and blurry on mouseover
+            image.style.filter = "brightness(60%) blur(5px)";
+        });
+
+        // Attach a mouseout event listener to the button
+        button.addEventListener("mouseout", () => {
+            // Make the image darker and blurry on mouseover
+            image.style.filter = "brightness(100%) blur(0)";
+        });
+
+
+
+        // Video autoplay when the modal opens
+
+        $('#trailer-modal.modal').on('show.bs.modal', function () {
+            // Get the iframe element
+            var iframe = $(this).find('iframe');
+
+            // Get the iframe src attribute
+            var src = iframe.attr('src');
+
+            // Add ?autoplay=1 to the end of the src attribute
+            iframe.attr('src', src + '?autoplay=1');
+        });
+
+        $('#trailer-modal.modal').on('hide.bs.modal', function () {
+            // Get the iframe element
+            var iframe = $(this).find('iframe');
+
+
+            // Get the iframe src attribute
+            var src = iframe.attr('src');
+
+            // Remove ?autoplay=1 from the end of the src attribute
+            iframe.attr('src', src.replace('?autoplay=1', ''));
+        });
+
+
+
+
+        let videoButton = document.querySelector('.video-button');
+let youtubeLink = 'https://www.youtube.com/embed/t7HT83wkVss';
+
+videoButton.addEventListener('click', function() {
+  if (window.innerWidth < 768) {
+    videoButton.removeAttribute('data-bs-target');
+    videoButton.removeAttribute('data-bs-toggle');
+    videoButton.href = youtubeLink;
+  }else{
+    videoButton.setAttribute('data-bs-target', '#trailer-modal');
+    videoButton.setAttribute('data-bs-toggle', 'modal');
+    videoButton.removeAttribute('href');
+  }
+});
+
+
+
+
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".header ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
+
+    </script>
+</body>
+</html>
